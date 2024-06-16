@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/sylep1.css">
+    <title>Punto 1</title>
+</head>
+<body>
+
+    <h1 id="colorbonito" >Welcome !</h1>
+   
+    <img id="imgperrito" src="assets/imagenes/perrito.jpg" alt="imagen_perrito" onclick="
+        const bordeimg = document.querySelector('#imgperrito');
+        const color =document.querySelector('#colorbonito')
+
+        if (bordeimg.style.border=== '5px solid black' ) {
+            bordeimg.style.border= 'none';
+            color.style.color='white';
+        }else{
+            bordeimg.style.border= '5px solid black';
+            color.style.color='black';
+        }
+    " />
+    
+
+
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylep2.css">
+    <title>Punto2</title>
+</head>
+<body>
+
+    <div class="contenedores">
+        <div class="tarjeta">
+            <img src="assets/imagenes/img1.JPG" alt="img1">
+            <input id="num1" type="number">
+        </div>
+        <div class="tarjeta">
+            <img src="assets/imagenes/img2.JPG" alt="img2">
+            <input id="num2" type="number">
+            
+        </div>
+        
+        <div class="tarjeta">
+            <img src="assets/imagenes/img3.JPG" alt="img3">
+            <input id="num3" type="number">
+        </div>
+
+    </div>
+    <div class="revisar">
+        <p id="total" >Llevas # de Stickers</p>
+
+        <button onclick="
+        const numero1=Number(document.querySelector('#num1').value);
+        const numero2=Number(document.querySelector('#num2').value);
+        const numero3=Number(document.querySelector('#num3').value);
+        const totalsticker=numero1+numero2+numero3;
+        
+        
+        if (totalsticker < 10) {
+         
+            const texto = document.querySelector('#total').innerHTML= 'Solo llevas '+totalsticker+ ' Sticker';
+            
+        }else{
+           
+            const texto = document.querySelector('#total').innerHTML='Llevas demasiados Sticker';
+        }
+        
+        ">Validar</button>
+
+    </div>
+
+
+    
+
+    <script></script>
+</body>
+</html>
